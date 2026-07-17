@@ -1,0 +1,31 @@
+{
+  "feature_columns": [
+    "Lactate",
+    "Vasopressor",
+    "SOFA",
+    "Platelet",
+    "Urine Output",
+    "Age",
+    "BUN"
+  ],
+  "display_names": {
+    "Age": "Age",
+    "Lactate": "Lactate",
+    "Platelet": "Platelet count",
+    "Urine Output": "Urine output",
+    "BUN": "BUN",
+    "SOFA": "SOFA score",
+    "Vasopressor": "Vasopressor use"
+  },
+  "risk_category_rules": {
+    "method": "Development-cohort LightGBM OOF probability tertiles, mapped through external logistic recalibration",
+    "original_probability": {
+      "low_upper": 0.04661629376832406,
+      "intermediate_upper": 0.26932026154423544
+    },
+    "recalibrated_probability": {
+      "low_upper": 0.0431615718036884,
+      "intermediate_upper": 0.1277145383181661
+    }
+  }
+}

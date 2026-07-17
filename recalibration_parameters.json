@@ -1,0 +1,6 @@
+{
+  "calibration_intercept": -1.3395858812452863,
+  "calibration_slope": 0.5828558211752268,
+  "equation": "logit(recalibrated_probability) = intercept + slope * logit(original_probability)",
+  "source": "Module 08 external-cohort logistic recalibration; secondary apparent analysis"
+}
