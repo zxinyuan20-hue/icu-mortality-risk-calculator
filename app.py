@@ -16,7 +16,8 @@ from model_artifacts import Winsorizer  # noqa: F401
 
 APP_ROOT = Path(__file__).resolve().parent
 MODEL_DIR = APP_ROOT / "model"
-
+if not MODEL_DIR.is_dir():
+    MODEL_DIR = APP_ROOT
 st.set_page_config(page_title="ICU Mortality Risk Calculator", page_icon="+", layout="wide")
 
 
